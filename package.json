@@ -1,14 +1,17 @@
 {
-  "name": "test2",
-  "version": "0.0.0",
+  "name": "Angular-Node-Express-Typescript",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "globalnpms": "sudo npm install -g pm2 nodemon",
+    "server": "cd ./build/server && nodemon --delay 5 www.js",
+    "server:nonstop": "cd ./build/server && pm2 start www.js",
+    "watch:server": "tsc -p ./server -w",
+    "watch:client": "ng build -w",
+    "watch:all": "concurrently --kill-others \"tsc -p ./server -w\" \"ng build -w\" ",
+    "build:server": "rm -r build/server && tsc -p ./server",
+    "build:client": "rm -r build/client && ng build -prod --aot",
+    "build:all": "rm -r build && tsc -p ./server && ng build -prod --aot"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +26,10 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "express": "latest",
+    "compression": "latest",
+    "body-parser": "latest"
   },
   "devDependencies": {
     "@angular/cli": "1.4.5",
@@ -33,15 +39,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.2.0",
-    "jasmine-core": "~2.6.2",
-    "jasmine-spec-reporter": "~4.1.0",
-    "karma": "~1.7.0",
-    "karma-chrome-launcher": "~2.1.1",
-    "karma-cli": "~1.0.1",
-    "karma-coverage-istanbul-reporter": "^1.2.1",
-    "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.1.2",
+    "concurrently": "^3.5.0",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.3.3"
