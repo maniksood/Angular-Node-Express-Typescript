@@ -20,7 +20,7 @@ The directory contains files created by angular-cli and two directories named `c
 Install the dependencies: 
 `npm install`
 
-(Note: if error occurs use `sudo npm install`)
+(NOTE: if error occurs use `sudo npm install`)
 
 
 Install global dependencies: (This will install global dependencies which are used to start the server and development)
@@ -33,7 +33,7 @@ There are some steps in order to do development and deployment easily.
 
 ### Development
 #### Code changes watch
-To watch the changes in the code during development (both angular and node/express) and compile the changes to javascript/es6, run: (Note: Keep this command running in the terminal and use another terminal window to start the server)
+To watch the changes in the code during development (both angular and node/express) and compile the changes to javascript/es6, run: (NOTE: Keep this command running in the terminal and use another terminal window to start the server)
 
 `npm run watch:all`
 
@@ -50,6 +50,10 @@ This command will run the node server on port `4000`. Navigate to `localhost:400
 
 Now the server is up and running and the code is being watch for any changes so that you can have a smooth development expreience.
 
+To see the data from express/api routes, navigate to:
+
+`localhost:4000/api/example1` && `localhost:4000/api/example2`
+
 ### Production
 #### Code Build
 To make the app production ready, run:
@@ -63,14 +67,13 @@ To make your app running all the time in the background until you pc/server shut
 
 `npm run server:nonstop`
 
-This command will run the server on port `4000`. This command utilises `pm2` gloabl dependency. If the command above throws error, run command `npm install -g pm2` and run the above command again.
+This command will run the server on port `4000`. Navigate to `localhost:4000`.
+
+(NOTE: This command utilises `pm2` gloabl dependency. If the command above throws error, run command `npm install -g pm2` and run the above command again.)
 
 In order to stop the server, run:
 
 `pm2 stop www`
-
-
-
 
 
 ### Coming Soon
