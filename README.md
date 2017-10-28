@@ -23,7 +23,7 @@ Install the dependencies:
 (Note: if error occurs use `sudo npm install`)
 
 
-Install global dependencies: (This will install global dependencies which are used to start the server and development. If some error occurs, try using the command with `sudo`)
+Install global dependencies: (This will install global dependencies which are used to start the server and development)
 
 `npm run globalnpms`
 
@@ -37,7 +37,7 @@ To watch the changes in the code during development (both angular and node/expre
 
 `npm run watch:all`
 
-This command will create a directory named `build` in the roort directory of the project. The `build` directory contains two directories named `client and server`. The `client` directory contains all compiled code of angular and the server directory contains all the javascript code compiled from typescript code.
+This command will create a directory named `build` in the roort directory of the project. The `build` directory contains two directories named `client and server`. The `client` directory contains all compiled code of angular and the `server` directory contains all the javascript code compiled from typescript code.
 
 #### Running Server
 In order to run a server for development, open a new terminal window and run:
@@ -75,8 +75,9 @@ In order to stop the server, run:
 
 ### Coming Soon
 
-- [ ] postgres, mysql, mssql support using sequelize
-- [ ] Models sync script to generate all the sequelize models to interact with the database
-- [ ] Script for creating models and migrations to generate new tables in the database.
+- [ ] Adding sequelize support
+- [ ] postgres, mysql, mssql support using sequelize.
+- [ ] Script for creating models and migrations to generate new tables in the database using sequelize.
+- [ ] Models sync script to generate all the database tables as sequelize models to interact with the database.
 - [ ] MongoDB support
 - [ ] Many More ....
