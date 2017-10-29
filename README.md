@@ -6,6 +6,11 @@ A basic \*EAN stack boilerplate in Typescript. An angular app is served over nod
 angular-cli can be used in the project in order to create components, services ..... etc. And you can access all the commands for client, angular cli and server from the root directly.
 
 ## Setup
+
+To use angular commands, you need to install angular cli. For that, run:
+
+`npm install -g @angular/cli`
+
 Clone the repo:
 `git clone https://github.com/maniksood/Angular-Node-Express-Typescript.git`
 
