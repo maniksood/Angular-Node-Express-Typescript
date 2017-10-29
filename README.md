@@ -3,7 +3,7 @@
 ## Intro
 A basic \*EAN stack boilerplate in Typescript. An angular app is served over node server including express routes for interacting with database.
 
-angular-cli can be used in the project in order to create components, services ..... etc
+angular-cli can be used in the project in order to create components, services ..... etc. And you can access al the commands for client, angular cli and server from the root directly.
 
 ## Setup
 Clone the repo:
@@ -74,6 +74,20 @@ This command will run the server on port `4000`. Navigate to `localhost:4000`.
 In order to stop the server, run:
 
 `pm2 stop www`
+
+
+### Extras
+You can start the watch script and production build process individually for client and server. Use the following commands for that:
+
+### Client
+For only client code watch `npm run watch:client`
+
+For only client code build `npm run build:client`
+
+### Server
+For only server code watch `npm run watch:server`
+
+For only server code build `npm run build:server`
 
 
 ### Coming Soon
