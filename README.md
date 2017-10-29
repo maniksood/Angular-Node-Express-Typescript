@@ -3,7 +3,7 @@
 ## Intro
 A basic \*EAN stack boilerplate in Typescript. An angular app is served over node server including express routes for interacting with database.
 
-angular-cli can be used in the project in order to create components, services ..... etc. And you can access al the commands for client, angular cli and server from the root directly.
+angular-cli can be used in the project in order to create components, services ..... etc. And you can access all the commands for client, angular cli and server from the root directly.
 
 ## Setup
 Clone the repo:
