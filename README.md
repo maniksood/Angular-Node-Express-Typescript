@@ -84,12 +84,12 @@ In order to stop the server, run:
 ### Extras
 You can start the watch script and production build process individually for client and server. Use the following commands for that:
 
-### Client
+#### Client
 For only client code watch `npm run watch:client`
 
 For only client code build `npm run build:client`
 
-### Server
+#### Server
 For only server code watch `npm run watch:server`
 
 For only server code build `npm run build:server`
